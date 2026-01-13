@@ -1,0 +1,184 @@
+
+*{
+    font-family: "Montserrat";
+}
+
+h1 {
+    color:pink;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+    color:cornflowerblue;
+}
+
+span{
+    font-size: 34px;
+}
+
+.sp1 {
+    background-color: cornsilk;
+}
+
+a{
+    text-decoration: none;
+}
+
+.input1, .input2{
+    border-radius: 43px;
+    height: 45px;
+}
+
+li{
+    list-style: none;
+}
+
+
+.li1, .li2, .li3{
+    font-size: 54px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darksalmon;
+}
+
+
+.li1{
+    text-align: start;
+}
+
+.li2{
+    text-align: center;
+}
+
+.li3{
+    text-align: end;
+}
+
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 50%;
+
+}
+
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    
+}
+
+.div3{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(131, 201, 26, 0.847);
+    border-radius: 50%;
+    
+}
+
+.parent {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row-reverse;
+    
+}
+
+.divparent2{
+    display: flex;
+    margin-top: 67px;
+    flex-direction: column;
+    
+}
+
+.div21{
+    height: 150px;
+    width: 150px;
+    background-color: powderblue;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+
+.div22{
+    height: 150px;
+    width: 150px;
+    background-color:bisque;
+    border-radius: 50%;
+    align-self: center;
+    
+    
+}
+
+
+.div23{
+    height: 150px;
+    width: 150px;
+    background-color:chocolate;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+/* */
+
+.divspacebtw div {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #9d8189;
+}
+
+.divspacebtw{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* */
+
+.divcenter div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #d8e2dc;
+}
+
+.h1item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divcenter{
+    display: flex;
+    justify-content: center;
+}
+
+/* */
+
+.spacearound div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #ffe5d9;
+}
+
+.spacearound{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* */
+
+.spaceevenly div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #ffcad4;
+}
+
+.spaceevenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
