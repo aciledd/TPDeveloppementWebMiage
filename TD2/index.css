@@ -1,0 +1,491 @@
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #ffffff;
+    color: #9d8189;
+    display: grid;
+}
+
+
+.navbar{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbargauche h1 {
+    font-size: 28px;
+    color: #9d8189;
+}
+
+.navbardroite {
+    display: flex;
+    gap: 31px;
+}
+
+.navbardroite p{
+    cursor: pointer;
+    color: #9d8189;
+}
+
+.navbardroite p:hover{
+    color: #f4acb7;
+}
+
+.section1{
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section1 h1 {
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-align: left;
+    margin-bottom: 10px;
+    color: #9d8189;
+}
+
+.soustitre {
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+
+.btns button {
+    padding: 10px 20px;
+    background-color: #f4acb7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btns button:first-child{
+    background-color: #f4acb7;
+    border-radius: 26px;
+    padding: 16px;
+}
+
+.btns button:first-child:hover{
+    background-color: #ffcad4;
+   
+}
+
+.btns button:last-child{
+    background-color: transparent;
+    border: 2px solid #f4acb7;
+    color: #f4acb7;
+    border-radius: 26px;
+    padding: 16px;
+}
+
+.btns button:last-child:hover{
+    background-color: #d8e2dc;
+}
+
+
+.section2 {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    position: relative;
+
+    padding: 50px;
+}
+
+.section2 img {
+
+    width: 600px;
+    height: 600px;
+
+    border: 3px solid white;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.section2 img {
+    transition: transform 0.3s;
+}
+
+.section2 img:hover {
+    transform: scale(1.05);
+}
+
+.section1, .section2 {
+    background-attachment: fixed;
+}
+
+.about-section {
+
+    grid-column: 1/3;
+    text-align: center;
+
+    padding: 80px 200px;
+    background-color: #d8e2dc;
+
+}
+
+.about-section h2 {
+
+    font-size: 3rem;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    padding: 10px 30px;
+    color: #9d8189;
+
+}
+
+.about-section p {
+
+    color: #9d8189;
+    font-size: 16px;
+    line-height: 1.8;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.infos { 
+
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+
+    gap: 80px;
+    padding: 60px 50px;
+
+    background-color: #ffffff;
+}
+
+.infosDiv {
+    text-align: center;
+    width: 174px;
+    height: 129px;
+}
+
+.infosCircle {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffcad4;
+
+    margin: 0 auto 15px;
+}
+
+.infosDiv h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    
+}
+
+.infosDiv p {
+    font-size: 13px;
+    color: #9d8189;
+}
+
+.infosDiv a {
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+}
+
+.infosDiv a:hover {
+    color: #f4acb7;
+}
+
+
+.WhatIDo{
+
+    grid-column: 1/3;
+    padding: 80px 50px;
+    background-color: #d8e2dc;
+}
+
+.WhatIDo h2{
+
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #9d8189;
+  }
+
+.Cards{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 1168px;
+    height: 396px;
+    margin: 0 auto;
+
+  }
+
+
+.Card{
+
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    flex: 1;
+
+    border: 2px solid transparent;
+    transition: border 0.3s;
+ }
+
+.Card:hover {
+    border: 2px solid #f4acb7;
+}
+
+.CardIcon{
+
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-size: 24px;
+    font-weight: bold;
+ }
+
+
+.Card h3 {
+
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #9d8189;
+}
+
+.CardDev{
+    background-color: #ffffff;
+
+    padding: 60px 40px;
+    text-align: center;
+    flex: 1;
+
+    border: 2px solid transparent;
+    border-bottom: 4px solid #f4acb7;
+
+    transition: border 0.3s;
+
+
+}
+
+.CardDev:hover {
+    border: 2px solid #f4acb7;
+    border-bottom: 4px solid #f4acb7;
+
+}
+
+.CardIconDev{
+
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+
+
+    font-weight: bold;
+    background-color: #f4acb7;
+    color: white;
+
+}
+
+.CardDev h3{
+
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #9d8189;
+}
+
+
+.Skills {
+    grid-column: 1/3;
+    padding: 80px 50px;
+
+    background-color: #ffffff;
+}
+
+
+.Skills h2 {
+    text-align: center;
+    font-size: 3rem;
+
+    margin-bottom: 60px;
+    color: #9d8189;
+}
+
+.SkillsBox {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #d8e2dc;
+
+}
+
+.Skill {
+    text-align: center;
+}
+
+
+.SkillPercent {
+    font-size: 4rem;
+    font-weight: 700;
+
+    color: #9d8189;
+    margin-bottom: 15px;
+}
+
+.SkillName {
+    font-size: 1rem;
+    color: #f4acb7;
+
+    font-weight: 600;
+}
+
+
+.Contact {
+    grid-column: 1/3;
+
+    padding: 80px 50px 40px;
+    background-color: #d8e2dc;
+    text-align: center;
+}
+
+.Contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+
+    color: #9d8189;
+}
+
+.Form{
+    max-width: 1168px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.FormRow {
+    display: flex;
+    gap: 30px;
+}
+
+.Input {
+    flex: 1;
+    padding: 15px 20px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9d8189;
+
+    color: #9d8189;
+    font-size: 16px;
+    font-family: "Montserrat";
+    outline: none;
+}
+
+.Input::placeholder {
+    color: #9d8189;
+}
+
+.Input:focus {
+    border-bottom: 1px solid #f4acb7;
+}
+
+.Textarea{
+    padding: 20px;
+
+    background-color: transparent;
+    border: 1px solid #9d8189;
+    color: #9d8189;
+    font-size: 16px;
+
+    font-family: "Montserrat";
+    min-height: 150px;
+
+    resize: vertical;
+    outline: none;
+
+ }
+
+.Textarea::placeholder {
+    color: #9d8189;
+}
+
+.Textarea:focus{
+    border: 1px solid #f4acb7;
+}
+
+.BtnSubmit {
+
+    padding: 15px 50px;
+
+    background-color: #f4acb7;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    align-self: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    
+}
+
+.BtnSubmit:hover {
+    background-color: #f4acb7;
+}
+
+.Footer {
+    margin-top: 60px;
+    color: #f4acb7;
+    font-size: 14px;
+}
