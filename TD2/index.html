@@ -8,6 +8,14 @@
     <title>TD2 Web</title>
 </head>
 <body>
+
+
+    <div class="toggle" id="toggle">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+    </div>
+
     <div class="navbar">
 
         <div class="navbargauche">
@@ -16,15 +24,19 @@
 
     </div>
 
+
     <div class="navbardroite">
-        <p>About me</p>
-        <p>Services</p>
-        <p>Contact me</p>
+
+        <a href="#about">About me</a>
+        <a href="#whatido">What I do</a>
+        <a href="#skills">My Skills</a>
+        <a href="#contact">Contact</a>
 
     </div>
+
 </div>
 
-    <div class="section1">
+    <div class="section1" id="home">
         <h1>Hi, I am <br> Acile EL DADA</h1>
         <p class="soustitre">Computer Science Student</p>
 
@@ -42,9 +54,9 @@
 
    
 
- <div class="about-section">
+ <div class="about-section" id="about">
 
-    <h2>About</h2>
+    <h2>About me</h2>
     <p>I'm a third-year MIASHS student at Université Côte d'Azur, focusing on management, computer science, and statistics. I'm currently working as an apprentice at SAP in the cybersecurity and cloud team, where I develop my technical skills in security testing and cloud infrastructure.</p>
     
 </div>
@@ -67,7 +79,7 @@
         <div class="infosDiv">
             <div class="infosCircle"></div>
             <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/acilee" style="text-decoration: underline;" target="_blank">linkedin.com/in/acilee</a>
+            <a href="https://www.linkedin.com/in/acilee" style="text-decoration: underline; color: pink;" target="_blank">linkedin.com/in/acilee</a>
         </div>
 
         <div class="infosDiv">
@@ -79,8 +91,8 @@
 </div>
 
 
-<div class="WhatIDo">
-    <h2>What i do</h2>
+<div class="WhatIDo" id="whatido">
+    <h2>What I do</h2>
 
     <div class="Cards">
         <div class="Card">
@@ -126,7 +138,7 @@
 
 </div>
 
-<div class="Skills">
+<div class="Skills" id="skills">
     <h2>My Skills</h2>
 
     <div class="SkillsBox">
@@ -157,7 +169,7 @@
 
 </div>
 
-<div class="Contact">
+<div class="Contact" id="contact">
     <h2>Get in touch</h2>
 
 
@@ -190,9 +202,7 @@
 
     
 
- <script>
-    document.querySelector('.Footer').textContent = `© Acile EL DADA ${new Date().getFullYear()}`;
-</script>
+ <script src="./index.js"></script>
 
 </body>
 </html>
